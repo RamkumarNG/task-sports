@@ -1,0 +1,43 @@
+$font-color: #551a8b;
+$players-box-color: #990000;
+// #0052d4
+// #4364f7
+// #6fb1fc
+
+.Create{
+    padding-top: 30px;
+    text-align: center;
+    color: $font-color;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .list{
+        margin: 50px;
+        text-align: center;
+        width: 150px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        color: $font-color;
+        box-shadow: inset 300px 0 0 0 #4d94ff;
+        transition: ease-out .3s;
+        border: none;
+        .links{
+            font-size:18px;
+            text-transform: uppercase;
+            color: black;
+        }
+        &:hover{
+            cursor: pointer;
+            box-shadow: inset 0px 0 0 0 #4d94ff;
+            color:black;
+        }
+    }
+}
